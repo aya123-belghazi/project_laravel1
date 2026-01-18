@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use App\Models\Participation;
 
 class DatabaseSeeder extends Seeder
 {
@@ -12,6 +13,13 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
+Participation::factory(50)->create();
+
+    // $this->call([
+    //     FilmsTableSeeder::class,
+    //     ActeursTableSeeder::class,
+    //     ParticipationsTableSeeder::class,
+    // ]);
         // \App\Models\User::factory(10)->create();
 
         // \App\Models\User::factory()->create([
